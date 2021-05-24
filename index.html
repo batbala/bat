@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+<input type="text" placeholder="enter">
+<br>
+<br>
+<button onclick="submit()">submit</button>
+<br>
+<p> </p>
+<script>
+  function submit(){
+var box=document.getElementsByTagName("input");
+var data=document.getElementsByTagName("p");
+data[0].innerHTML=box[0].value;
+alert('ok');
+  }
+</script>
+</body>
+</html>
